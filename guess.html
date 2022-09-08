@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Js program</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container text-bg-info">
+    <!-- header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Js program</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="to-do-list.html">To-do list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guess.html">Guess Number</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="increamentDecreament.html"
+                  >Number+-</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html"> Calculator </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end -->
+    <!-- guess section start -->
+    <section class="p-4">
+      <div class="row row-cols-lg-3 text text-center">
+        <!-- guess number -->
+
+        <div class="card p-3 c-2 mx-auto text-bg-info">
+          <form action="" onsubmit="guessNumber()" name="formdata">
+            <h5>Guess a number between 1-20</h5>
+            <input type="text" name="numberValue" class="number" />
+            <input type="submit" name="" id="" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- guess section end -->
+    <!-- script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/guess.js"></script>
+  </body>
+</html>

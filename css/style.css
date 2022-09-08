@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #D6CDA4, #EEE3CB);
+}
+
+.to-do-list {
+    padding-top: 60px;
+
+}
+
+.add-task {
+    padding: 14px;
+    width: 500px;
+    border: none;
+    color: black;
+    font-size: 18px;
+}
+
+.add-task:focus {
+    outline: none;
+}
+
+.incompleted-task {
+    margin: 32px 0;
+}
+
+.incompleted-task .task {
+    background-color: rgba(179, 129, 137, 0.7);
+    font-size: 16px;
+    padding: 14px;
+    width: 500px;
+    margin: 16px 0;
+
+}
+
+.task i {
+    float: right;
+}
+
+i:hover {
+    cursor: pointer;
+
+}

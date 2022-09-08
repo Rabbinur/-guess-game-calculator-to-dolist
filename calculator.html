@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Js program</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+      .c-modal {
+        width: 600px;
+        margin: auto;
+        display: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .card {
+        width: 400px;
+        margin: 60px auto;
+        border-width: 4px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+      }
+      .display {
+        width: 100%;
+        display: block;
+        padding: 14px;
+        font-size: 18px;
+        margin-bottom: 16px;
+        background: #7fb77e;
+        border: none;
+        text-align: right;
+      }
+
+      .btns {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      input[type="button"] {
+        background-color: #7fb77e;
+        padding: 6px;
+        border: none;
+        font-size: 18px;
+      }
+      input[type="button"]:hover {
+        cursor: pointer;
+        background-color: #ec7e72;
+      }
+    </style>
+  </head>
+  <body class="container text-bg-secondary">
+    <!-- header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Js program</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="to-do-list.html">To-do list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guess.html">Guess Number</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="increamentDecreament.html"
+                  >Number+-</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html"> Calculator </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end -->
+
+    <!-- calculator part -->
+    <div class="card p-3">
+      <!-- display -->
+      <form name="calculator">
+        <input type="text" name="result" class="display" />
+        <div class="btns">
+          <!-- btn -->
+
+          <input
+            type="button"
+            value="1"
+            name=""
+            onclick="calculator.result.value+='1'"
+          />
+          <input
+            type="button"
+            value="2"
+            name=""
+            onclick="calculator.result.value+='2'"
+          />
+          <input
+            type="button"
+            value="3"
+            name=""
+            onclick="calculator.result.value+='3'"
+          />
+          <input
+            type="button"
+            value="*"
+            name=""
+            onclick="calculator.result.value+='*'"
+          />
+
+          <input
+            type="button"
+            value="4"
+            name=""
+            onclick="calculator.result.value+='4'"
+          />
+          <input
+            type="button"
+            value="5"
+            name=""
+            onclick="calculator.result.value+='5'"
+          />
+          <input
+            type="button"
+            value="6"
+            name=""
+            onclick="calculator.result.value+='6'"
+          />
+          <input
+            type="button"
+            value="/"
+            name=""
+            onclick="calculator.result.value+='/'"
+          />
+
+          <input
+            type="button"
+            value="7"
+            name=""
+            onclick="calculator.result.value+='7'"
+          />
+          <input
+            type="button"
+            value="8"
+            name=""
+            onclick="calculator.result.value+='8'"
+          />
+          <input
+            type="button"
+            value="9"
+            name=""
+            onclick="calculator.result.value+='9'"
+          />
+          <input
+            type="button"
+            value="-"
+            name=""
+            onclick="calculator.result.value+='-'"
+          />
+
+          <input
+            type="button"
+            value="C"
+            name=""
+            onclick="calculator.result.value=''"
+          />
+          <input
+            type="button"
+            value="0"
+            name=""
+            onclick="calculator.result.value+='0'"
+          />
+          <input
+            type="button"
+            value="="
+            name=""
+            onclick="calculator.result.value=eval(calculator.result.value)"
+          />
+          <input
+            type="button"
+            value="+"
+            name=""
+            onclick="calculator.result.value+='+'"
+          />
+        </div>
+      </form>
+    </div>
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      let b = document.getElementsByClassName("b");
+      b[0].innerText = "hlw";
+    </script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
